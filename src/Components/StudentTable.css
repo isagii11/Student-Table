@@ -1,0 +1,151 @@
+/* StudentTable.css */
+
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: #333;
+  padding: 20px;
+}
+
+/* Card Styling */
+.custom-card {
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  background: white;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: scale(1.02);
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Headers */
+.table thead {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Table Cells */
+.table th,
+.table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background: rgba(255, 204, 204, 0.5);
+  transition: background 0.3s ease-in-out;
+}
+
+/* Input Fields */
+input[type="text"] {
+  width: 220px;
+  margin: 8px;
+  padding: 10px;
+  border: 2px solid #36d1dc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff5e62;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 94, 98, 0.5);
+}
+
+/* Button Styling */
+button {
+  margin: 10px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Different Button Colors */
+.btn-primary {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+.btn-success {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+.btn-danger {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* Centering Buttons */
+.middle-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-5,
+  .col-md-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Shift left-side table 50px to the left */
+.col-md-5:first-child {
+  margin-left: -50px;
+}
+
+
+  .middle-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
